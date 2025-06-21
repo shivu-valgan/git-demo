@@ -7,6 +7,55 @@
 </head>
 <body>
     <h1>Welcome to git demo!</h1>
-    <h2>learning basics of git</h2>
+    <h2>learning basics of git</h2><br>
+    <h3>git installation and setup</h3>
+    <p>
+| Task              | Command                                            |
+| ----------------- | -------------------------------------------------- |
+| Check Git version | `git --version`                                    |
+| Set username      | `git config --global user.name "Shivakumar"`       |
+| Set email         | `git config --global user.email "you@example.com"` |
+    </p><br><br>
+
+    <h3>repo initialization</h3>
+    <p>
+| Task                 | Command                              |
+| -------------------- | ------------------------------------ |
+| Create folder        | `mkdir project-name`                 |
+| Move into folder     | `cd project-name`                    |
+| Start Git tracking   | `git init`                           |
+| Check if it's a repo | `git status` or `ls -a` (see `.git`) |
+    </p><br><br>
+    <h3>Tracking Changes</h3>
+<p>
+    | Step                | Command                   | Purpose              |
+| ------------------- | ------------------------- | -------------------- |
+| Check file status   | `git status`              | See what's changed   |
+| Stage a file        | `git add filename`        | Move file to staging |
+| Stage all files     | `git add .`               | Stage everything     |
+| Commit changes      | `git commit -m "message"` | Save changes         |
+| View commit history | `git log`                 | Show commits made    |
+</p><br><br>
+<h3>Undoing Mistakes</h3>
+<p>
+    | Situation                       | Command                     | Description                |
+| ------------------------------- | --------------------------- | -------------------------- |
+| Undo file changes (unstaged)    | `git restore file`          | Revert file to last commit |
+| Unstage a file                  | `git restore --staged file` | Remove from staging        |
+| Undo last commit (keep changes) | `git reset --soft HEAD~1`   | Uncommit changes           |
+| Undo commit and unstage         | `git reset HEAD~1`          | Uncommit and unstage       |
+| Delete all changes (dangerous)  | `git reset --hard HEAD`     | Discard everything 😱      |
+</p><br><br>
+<h3>Branching</h3>
+<p>
+    | Task                      | Command                                                      | Purpose                |
+| ------------------------- | ------------------------------------------------------------ | ---------------------- |
+| List branches             | `git branch`                                                 | Shows local branches   |
+| Create + switch branch    | `git checkout -b branch-name` or `git switch -c branch-name` | New branch and switch  |
+| Switch branches           | `git switch branch-name`                                     | Go to another branch   |
+| Merge into current branch | `git merge branch-name`                                      | Combine branch changes |
+| Delete a branch           | `git branch -d branch-name`                                  | Clean up after merge   |
+</p><br><br>
+<h3></h3>
 </body>
 </html>
