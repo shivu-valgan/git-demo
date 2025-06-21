@@ -1,0 +1,7 @@
+# Ignore system files
+*.log
+*.tmp
+.DS_Store
+
+# VS Code settings
+.vscode/
