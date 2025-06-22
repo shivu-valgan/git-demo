@@ -8,6 +8,10 @@ This is my first Git + GitHub practice project.
 - Branching
 - Undoing changes
 - Pushing to GitHub
+- Remote connection
+- Merging
+- Git ignore
+- Readme writing
 
 ## Author
 Shivakumar
